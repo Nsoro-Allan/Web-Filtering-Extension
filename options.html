@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Content Filter Settings</title>
+    <style>
+        body {
+            width: 500px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Filter Settings</h2>
+    <h3>Blocked Sites</h3>
+    <textarea id="blockedSites" placeholder="Enter one site per line"></textarea>
+    <h3>Inappropriate Keywords</h3>
+    <textarea id="inappropriateKeywords" placeholder="Enter one keyword per line"></textarea>
+    <button id="saveBtn">Save</button>
+    <p id="status"></p>
+
+    <script src="options.js"></script>
+</body>
+</html>
