@@ -61,15 +61,27 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+        #statusText {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
     <h2>Web Content Filter</h2>
+    <div class="container">
     <label class="switch">
         <input type="checkbox" id="filterToggle">
         <span class="slider"></span>
     </label>
     <span id="statusText">Filter is OFF</span>
+    </div>
 
     <div class="stats">
         <p>Sites blocked today: <span id="blockedCount">0</span></p>
